@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color:white;
+}
+
+.container{
+    background-image: url(./img/pexels-giftpunditscom-1303086.jpg);
+    width: 100vw;
+    height:100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display:flex;
+    flex-direction: column;
+    padding-inline:2rem;
+    
+    
+}
+
+ .content {
+    position: relative;
+    top:50px;
+} 
+
+.row{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem 4rem;
+    
+}
+
+.row, p {
+    font-size:2vw;
+    color:rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-shadow: coral;
+}
+
+.row > div {
+    width:15vw;
+    height:35vh;
+    background: linear-gradient(
+    to right bottom,
+     rgba(255,255,255,0.7),
+     rgba(255,255,255,0.3)
+     );
+    text-align: center;
+    border-radius: 1rem;
+    backdrop-filter: blur(2rem);
+
+    
+}
+
+h1 {
+    font-size:3rem;
+    font-weight:bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h3{
+    font-size:1.5rem;
+    word-spacing:5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.col > p {
+    background: rgb(110, 7, 55);
+}
+
+.col > h4 {
+    color:black;
+    font-size:10vw;
+    display: float;
+    position: relative;
+    top:25px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 430px) {
+
+    .container{
+        margin:0;
+        padding:0;
+        display: flex;
+        flex-wrap: wrap;
+        background-size: cover;
+        height:200vh;
+      
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+        width:60%;
+        
+
+    }
+    .row > div {
+        display: flex;
+        flex-direction: column;
+        width:60vw;
+        margin:10px 0px;
+            
+    }
+    .row, p {
+        font-size:30px;
+    }
+
+    .col h4 {
+        font-size:20vw;
+    }
+    
+}
+
+@media screen and (max-width: 770px){
+
+    .row {
+        margin-inline:1rem;
+    }
+
+    .row > div {
+        height:27vh;
+    }
+
+}
